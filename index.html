@@ -44,8 +44,11 @@ body { background-color:grey;}
           
             function changeColor(color) { 
                 document.body.style.background = color; 
-		    document.h1.style.color="yellow";
-            } 
+var h1Elements = document.getElementsByTagName("h1");
+
+for(var i = 0; i < h1Elements.length; i++) {
+   h1Elements[i].style.color = "yellow";
+}            } 
              
                   
         </script>  
