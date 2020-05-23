@@ -47,25 +47,29 @@ body { background-color:grey;}
             function changeColor(color) { 
                 document.body.style.background = color; 
                    document.getElementById("name").style.color = "yellow";
-                                   document.getElementById("label").style.color = "yellow";
+                              document.getElementById("label").style.color = "yellow";
+                switch(color)
                 
-if (color === 'red') {
+      case 1: (color === 'red') {
                    document.getElementById("name").style.color = "black";
                        document.getElementById("label").style.color = "black";
-
-}else if (color === 'blue') {
+break;
+}
+                case 2:  (color === 'blue') {
 document.getElementById("name").style.color = "orange";
-                       document.getElementById("label").style.color = "orange"
-
-}else if (color === 'pink') {
+                       document.getElementById("label").style.color = "orange";
+break;
+}
+                case 3: (color === 'pink') {
     
 document.getElementById("name").style.color = "green";
-                       document.getElementById("label").style.color = "green"
+                       document.getElementById("label").style.color = "green";
+                    break;
 }
-else {
+                default:  
     document.getElementById("name").style.color = "red";
-                       document.getElementById("label").style.color = "red"
-}
+                       document.getElementById("label").style.color = "red";
+
            
                
             }
