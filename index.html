@@ -48,28 +48,23 @@ body { background-color:grey;}
                 document.body.style.background = color; 
                    document.getElementById("name").style.color = "yellow";
                               document.getElementById("label").style.color = "yellow";
-                switch(color)
-                
-      case 1: (color === 'red') {
+                if (color === 'red') {
                    document.getElementById("name").style.color = "black";
                        document.getElementById("label").style.color = "black";
-break;
-}
-                case 2:  (color === 'blue') {
+
+}else if (color === 'blue') {
 document.getElementById("name").style.color = "orange";
-                       document.getElementById("label").style.color = "orange";
-break;
-}
-                case 3: (color === 'pink') {
+                       document.getElementById("label").style.color = "orange"
+
+}else if (color === 'pink') {
     
 document.getElementById("name").style.color = "green";
-                       document.getElementById("label").style.color = "green";
-                    break;
+                       document.getElementById("label").style.color = "green"
 }
-                default:  
+else {
     document.getElementById("name").style.color = "red";
-                       document.getElementById("label").style.color = "red";
-
+                       document.getElementById("label").style.color = "red"
+}
            
                
             }
