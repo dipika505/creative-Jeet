@@ -56,48 +56,10 @@ body { background-color:grey;}
     'grey': "red",
 
 }
-                        
-
-                
-                switch(color)
-                {
-                    case "red"  :
-                   document.getElementById("name").style.color = "black";
-                       document.getElementById("label").style.color = "black";
-                        console.log("hello dipika the color is : "+color + " and color  of the text is black" );
-                        console.log("The color is red for "+ 
-                    map1[color]); 
-                        break;
-
-                    case  "blue":
-                     
-
-document.getElementById("name").style.color = "orange";
-                       document.getElementById("label").style.color = "orange";
-console.log("hello dipika the color is : "+color + " and color  of the text is orange for the color "+color );
-                         console.log("The color is blue for "+ 
-                    map1[color]); 
-                        break;
-
-                        
-                    case  "pink":
-document.getElementById("name").style.color = "green";
-                       document.getElementById("label").style.color = "green";
-                        console.log("hello dipika the color is : "+color + " and color  of the text is green for the color "+color );
-                         console.log("The color is pink for "+ 
-                    map1[color]); 
-                        break;
-
-                        
-default :
-    document.getElementById("name").style.color = "red";
-                       document.getElementById("label").style.color = "red";
-                        console.log("hello dipika the color is : "+color + " and color  of the text is red  for the color "+color );
-                         console.log("The color is grey for "+ 
-                    map1[color]); 
-
-}
-           
+ document.getElementById("name").style.color = map1[color];
+ document.getElementById("label").style.color = map1[color];
+ console.log("hello dipika the color is : "+color + " and color  of the text is "+map1[color]+"  for the color "+color );
+                                    
                
             }
              
