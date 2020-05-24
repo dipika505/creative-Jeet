@@ -39,13 +39,7 @@ body { background-color:grey;}
         <button type "button" name ="button2"  value ="OK" onclick="changeColor('pink')">PINK </button>
 
         <button type "button" name ="button2"  value ="OK" onclick="changeColor('grey')">RESET </button>
-var map={
-    'red'= black;
-    'blue'=orange;
-   'pink'=green;
-    'grey'=red;
 
-}
     <script> 
            
             var str = "Click on button to change the background color"; 
@@ -55,6 +49,13 @@ var map={
                 document.body.style.background = color; 
                    document.getElementById("name").style.color = "yellow";
                               document.getElementById("label").style.color = "yellow";
+                var map={
+    'red'= black;
+    'blue'=orange;
+   'pink'=green;
+    'grey'=red;
+
+}
                         
 
                 
@@ -64,6 +65,7 @@ var map={
                    document.getElementById("name").style.color = "black";
                        document.getElementById("label").style.color = "black";
                         console.log("hello dipika the color is : "+color + " and color  of the text is black" );
+                        break;
 
                     case  "blue":
                      
@@ -71,12 +73,14 @@ var map={
 document.getElementById("name").style.color = "orange";
                        document.getElementById("label").style.color = "orange";
 console.log("hello dipika the color is : "+color + " and color  of the text is orange for the color "+color );
+                        break;
 
                         
                     case  "pink":
 document.getElementById("name").style.color = "green";
                        document.getElementById("label").style.color = "green";
                         console.log("hello dipika the color is : "+color + " and color  of the text is green for the color "+color );
+                        break;
 
                         
 default :
