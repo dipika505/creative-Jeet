@@ -34,8 +34,9 @@ body { background-color:grey;}
     <h1 id="label"><center><b>MY WEBSITE </b></center></h1>
             
 
-        <button type "button" name ="button1"  value ="OK" onclick="changeColor('blue')">Change </button>
-    <input type="text" name ="fname"/>
+        <button type "button" name ="button1"  value ="OK" onclick="changeColor(document.getElementByID('color1').value)">Change </button>
+    <input type="text" name ="fname" id= "color1"/>
+    document.body.style.background = color;
 
        
     <script> 
