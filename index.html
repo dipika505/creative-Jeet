@@ -41,8 +41,18 @@ body { background-color:grey;}
     <script> 
            
             var str = "Click on button to change the background color"; 
-         
+        
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
           
+        
+var color1= getUrlParameter('color');
+        console.log(color1);
+
             function changeColor(color) { 
                 document.body.style.background = color; 
                    document.getElementById("name").style.color = "yellow";
